@@ -1,3 +1,7 @@
+higher-order functions, which means:
+----------- They expect another function (called a “callback”) to tell them what to do with each element. ------------
+// All of them could be replaced by handwork, ForeEach() but don't do that.
+// but using the right tool for the right job makes you faster, cleaner, and smarter.
 
 Just loop through items	forEach()
 Transform each item	map()
@@ -90,3 +94,5 @@ ________________________________________
 What it does: Flattens nested arrays.
 When to use: When you have arrays inside arrays.
 arr.flat(2);
+
+
