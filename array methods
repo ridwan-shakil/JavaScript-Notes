@@ -1,0 +1,92 @@
+
+Just loop through items	forEach()
+Transform each item	map()
+Get only matching items	filter()
+Find one specific item	find()
+Check if item exists	includes()
+Check any item passes	some()
+Check all items pass	every()
+Sum or combine all	reduce()
+Sort data	sort()
+Add/remove elements	push(), pop(), shift(), unshift(), splice()
+Copy or merge	slice(), concat()
+Flatten nested arrays	flat()
+
+// ======================================
+// 🧠 JavaScript Array Methods — Quick Revision Notes
+🔹 1. forEach()
+// What it does: Loops through each item in an array.
+// When to use: When you just want to do something for each item (no return needed).
+arr.forEach(item => console.log(item));
+________________________________________
+🔹 2. map()
+What it does: Creates a new array by transforming each element.
+When to use: When you want to modify items and return a new array.
+const doubled = arr.map(num => num * 2);
+________________________________________
+🔹 3. filter()
+What it does: Returns a new array with elements that match a condition.
+When to use: When you need only certain elements.
+const even = arr.filter(num => num % 2 === 0);
+________________________________________
+🔹 4. find()
+What it does: Returns the first element that matches a condition.
+When to use: When you want to find one specific item (object, user, etc.).
+const user = users.find(u => u.id === 1);
+________________________________________
+🔹 5. includes()
+What it does: Checks if an array contains a specific value.
+When to use: For existence checks (true/false).
+arr.includes('apple'); // true or false
+________________________________________
+🔹 6. some()
+What it does: Returns true if any item matches a condition.
+When to use: When only one match is enough.
+arr.some(num => num > 10);
+________________________________________
+🔹 7. every()
+What it does: Returns true if all items match a condition.
+When to use: To ensure all elements meet a rule.
+arr.every(num => num > 0);
+________________________________________
+🔹 8. reduce()
+What it does: Combines all elements into one value (e.g., sum).
+When to use: To calculate totals or aggregate data.
+const total = arr.reduce((sum, n) => sum + n, 0);
+________________________________________
+🔹 9. sort()
+What it does: Sorts array elements (changes original array).
+When to use: When you need ordered data.
+arr.sort((a, b) => a - b); // numeric sort
+________________________________________
+🔹 10. push() / pop()
+What they do: Add or remove elements at the end.
+When to use: For stack-like operations.
+arr.push('item'); // add
+arr.pop();        // remove last
+________________________________________
+🔹 11. unshift() / shift()
+What they do: Add or remove elements at the beginning.
+When to use: For queue-like operations.
+arr.unshift('start');
+arr.shift();
+________________________________________
+🔹 12. slice()
+What it does: Copies part of an array into a new one.
+When to use: To extract without changing the original.
+arr.slice(1, 3);
+________________________________________
+🔹 13. splice()
+What it does: Adds or removes elements in place.
+When to use: To modify the original array.
+arr.splice(1, 2, 'newItem');
+________________________________________
+🔹 14. concat()
+What it does: Combines multiple arrays into one.
+When to use: To merge arrays.
+arr.concat(otherArr);
+________________________________________
+🔹 15. flat()
+What it does: Flattens nested arrays.
+When to use: When you have arrays inside arrays.
+arr.flat(2);
